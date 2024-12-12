@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарные Блюда</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/card_style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Название Блюда</th>
+            <th>Оценка</th>
+            <th>Ссылка на Рецепт</th>
+            <th>Фото Блюда</th>
+            <th>Автор Рецепта</th>
+        </tr>
+        <tr>
+            <td>Борщ</td>
+            <td>9</td>
+            <td><a href="https://m.povar.ru/recipes/borsh_klassicheskii_s_govyadinoi-54428.html">Рецепт</a></td>
+            <td><img src="https://img.freepik.com/premium-photo/borscht-soup-borscht-with-meat-wooden-white-background_560930-1776.jpg?w=740" alt="Борщ" width="100"></td>
+            <td>
+                <div class="card">
+                    <div class="card-content">
+                        <p>Иван Иванович</p>
+                        <p>Дата рождения: 01.01.1980</p>
+                        <p>Город: Москва</p>
+                        <p>Email: ivan@example.com</p>
+                    </div>
+                    <!--<img src="https://civilisable.com/wp-content/uploads/2024/02/Traditional-Russian-Clothing-for-Men-25.2.2024.jpg"-->
+                    <img src="#"  alt="Иван Иванович" class="card-image">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Драники</td>
+            <td>8</td>
+            <td><a href="https://m.povar.ru/recipes/draniki_kartofelnye_klassicheskie-43098.html">Рецепт</a></td>
+            <td><img src="https://c7.alamy.com/comp/2AWB3K7/traditional-ukrainian-potato-pancakes-deruny-served-on-stone-background-with-copy-space-2AWB3K7.jpg" alt="Драники" width="100"></td>
+            <td>
+                <div class="card">
+                    <div class="card-content">
+                        <p>Анна Петровна</p>
+                        <p>Дата рождения: 15.05.1985</p>
+                        <p>Город: Минск</p>
+                        <p>Email: anna@example.com</p>
+                    </div>
+                   
+                   
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Вареники</td>
+            <td>9</td>
+            <td><a href="https://m.povar.ru/recipes/vareniki_s_tvorogom_klassicheskie-90658.html">Рецепт</a></td>
+            <td><img src="https://img.freepik.com/premium-photo/classic-ukrainian-pierogi-varenyky-with-cherries_960396-627186.jpg?w=740" alt="Вареники" width="100"></td>
+            <td>
+                <div class="card">
+                    <div class="card-content">
+                        <p>Олег Сергеевич</p>
+                        <p>Дата рождения: 22.08.1975</p>
+                        <p>Город: Киев</p>
+                        <p>Email: oleg@example.com</p>
+                    </div>
+                    <img src="https://m.media-amazon.com/images/I/51Sp7nmeWeL.jpg
+" alt="Олег Сергеевич" class="card-image">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Бигос</td>
+            <td>8</td>
+            <td><a href="https://m.povar.ru/recipes/bigos_polskii-47302.html">Рецепт</a></td>
+            <td><img src="https://eatingeuropean.com/wp-content/uploads/2017/10/Bigos-Polish-Hunter-Stew-1.jpg" alt="Бигос" width="100"></td>
+            <td>
+                <div class="card">
+                    <div class="card-content">
+                        <p>Мария Ивановна</p>
+                        <p>Дата рождения: 11.11.1990</p>
+                        <p>Город: Варшава</p>
+                        <p>Email: maria@example.com</p>
+                    </div>
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5Ml31KHSVbyaJxqAiZ642-8lOCYuLE3DVLPNgsfpPjn0_SHS1p0jM9yZLl9Do
+" alt="Мария Ивановна" class="card-image">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Фалафель</td>
+            <td>10</td>
+            <td><a href="https://m.povar.ru/recipes/falafel-5014.html">Рецепт</a></td>
+            <td><img src="https://tastythriftytimely.com/wp-content/uploads/2023/06/Falafel-Pita-1-1367x2048.jpg" alt="Фалафель" width="100"></td>
+            <td>
+                <div class="card">
+                    <div class="card-content">
+                        <p>Давид Абрамович</p>
+                        <p>Дата рождения: 05.02.1982</p>
+                        <p>Город: Тель-Авив</p>
+                        <p>Email: david@example.com</p>
+                    </div>
+                    <img src="https://img.freepik.com/free-photo/portrait-young-orthodox-jewish-man-with-bet-slip_155003-26405.jpg?t=st=1733507252~exp=1733510852~hmac=46e08eb1a5add293e50cae2a9deacaf18d7e1ed2a55733fc08741c94fe5b7f12&w=2000
+" alt="Давид Абрамович" class="card-image">
+                </div>
+            </td>
+        </tr>
+    </table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
