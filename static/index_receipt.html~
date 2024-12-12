@@ -66,9 +66,7 @@
                         <p>Город: Киев</p>
                         <p>Email: oleg@example.com</p>
                     </div>
-                     <!--<img src="https://m.media-amazon.com/images/I/51Sp7nmeWeL.jpg
-" alt="Олег Сергеевич" class="card-image">-->
-<img src="#" alt="Олег Сергеевич" class="card-image">
+                    
                 </div>
             </td>
         </tr>
