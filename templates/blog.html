@@ -35,6 +35,63 @@
         <h2>Наш блог о лучших домашних рецептах</h2>
         <p>Читайте наши последние статьи и советы по приготовлению вкусных блюд.</p>
     </div>
+    
+    <!-- Новая секция подписки -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Подпишитесь на нашу рассылку
+                    </div>
+                    <div class="card-body">
+                        <form id="subscriptionForm" action="/subscribe" method="POST">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email для подписки</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="Введите ваш email">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                                <label class="form-check-label" for="agreeTerms">Я согласен получать рассылку</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Новая секция отзывов -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h3>Оставьте свой отзыв</h3>
+                <form id="reviewForm" action="/submit_review" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="review" class="form-label">Ваш отзыв</label>
+                        <textarea class="form-control" id="review" name="review" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">Оценка</label>
+                        <select class="form-select" id="rating" name="rating">
+                            <option value="5">⭐⭐⭐⭐⭐ Отлично</option>
+                            <option value="4">⭐⭐⭐⭐ Хорошо</option>
+                            <option value="3">⭐⭐⭐ Нормально</option>
+                            <option value="2">⭐⭐ Не очень</option>
+                            <option value="1">⭐ Плохо</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
